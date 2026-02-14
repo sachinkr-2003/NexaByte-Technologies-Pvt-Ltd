@@ -68,21 +68,21 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                <span className="text-3xl">💻</span>
+                <span className="text-3xl"><i class="fa-solid fa-laptop"></i></span>
               </div>
               <h3 className="text-2xl font-bold mb-4">Custom Software</h3>
               <p className="text-gray-600">Tailored solutions built with cutting-edge technologies</p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                <span className="text-3xl">📱</span>
+                <span className="text-3xl"><i class="fa-solid fa-mobile"></i></span>
               </div>
               <h3 className="text-2xl font-bold mb-4">Web & Mobile Apps</h3>
               <p className="text-gray-600">Responsive and intuitive applications for all platforms</p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                <span className="text-3xl">☁️</span>
+                <span className="text-3xl"><i class="fa-solid fa-cloud"></i></span>
               </div>
               <h3 className="text-2xl font-bold mb-4">Cloud & DevOps</h3>
               <p className="text-gray-600">Scalable infrastructure and seamless deployment</p>
@@ -101,14 +101,14 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center space-y-4">
               <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto">
-                <span className="text-4xl">⚡</span>
+                <span className="text-4xl"><i class="fa-solid fa-truck-fast"></i></span>
               </div>
               <h3 className="text-xl font-bold">Fast Delivery</h3>
               <p className="text-gray-600">Quick turnaround without compromising quality</p>
             </div>
             <div className="text-center space-y-4">
               <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto">
-                <span className="text-4xl">🛡️</span>
+                <span className="text-4xl"><i class="fa-solid fa-lock"></i></span>
               </div>
               <h3 className="text-xl font-bold">Secure Solutions</h3>
               <p className="text-gray-600">Enterprise-grade security standards</p>

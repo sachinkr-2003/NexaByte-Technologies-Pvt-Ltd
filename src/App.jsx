@@ -8,6 +8,8 @@ import Services from "./pages/Services";
 import Programs from "./pages/Programs";
 import Placement from "./pages/Placement";
 import Contact from "./pages/Contact";
+import Verify from "./pages/Verify";
+import NotFound from "./pages/NotFound";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -31,6 +33,8 @@ export default function App() {
         <Route path="/programs" element={<Programs />} />
         <Route path="/placement" element={<Placement />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/verify" element={<Verify />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>

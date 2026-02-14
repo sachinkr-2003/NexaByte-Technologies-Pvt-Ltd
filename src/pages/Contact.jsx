@@ -1,4 +1,10 @@
 export default function Contact() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Thank you for your message! We will get back to you within 24 hours.");
+    e.target.reset();
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -26,7 +32,7 @@ export default function Contact() {
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
               <p className="text-gray-600 mb-8 text-lg">Fill out the form below and we'll get back to you within 24 hours</p>
               
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label className="block text-gray-700 font-semibold mb-2">Full Name *</label>
                   <input 
@@ -173,9 +179,16 @@ export default function Contact() {
             <p className="text-xl text-gray-600">Visit our office in Lucknow</p>
           </div>
           <div className="bg-white p-4 rounded-3xl shadow-2xl">
-            <div className="w-full h-96 bg-gray-200 rounded-2xl flex items-center justify-center">
-              <p className="text-gray-500 text-lg">Google Maps Integration Here</p>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.99973753655!2d80.77769975!3d26.8466999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+              width="100%"
+              height="384"
+              style={{ border: 0, borderRadius: '1rem' }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="NexaByte Technologies Location"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -188,20 +201,20 @@ export default function Contact() {
             <p className="text-xl text-gray-600 mb-12">Follow us on social media for updates and insights</p>
           </div>
           <div className="flex justify-center gap-6">
-            <a href="#" className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center text-white text-2xl hover:shadow-xl transition-all transform hover:scale-110">
-              f
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center text-white text-2xl hover:shadow-xl transition-all transform hover:scale-110">
+              <i className="fa-brands fa-facebook"></i>
             </a>
-            <a href="#" className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center text-white text-2xl hover:shadow-xl transition-all transform hover:scale-110">
-              in
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center text-white text-2xl hover:shadow-xl transition-all transform hover:scale-110">
+              <i className="fa-brands fa-linkedin"></i>
             </a>
-            <a href="#" className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center text-white text-2xl hover:shadow-xl transition-all transform hover:scale-110">
-              tw
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center text-white text-2xl hover:shadow-xl transition-all transform hover:scale-110">
+              <i className="fa-brands fa-twitter"></i>
             </a>
-            <a href="#" className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center text-white text-2xl hover:shadow-xl transition-all transform hover:scale-110">
-              ig
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center text-white text-2xl hover:shadow-xl transition-all transform hover:scale-110">
+              <i className="fa-brands fa-instagram"></i>
             </a>
-            <a href="#" className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center text-white text-2xl hover:shadow-xl transition-all transform hover:scale-110">
-              yt
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center text-white text-2xl hover:shadow-xl transition-all transform hover:scale-110">
+              <i className="fa-brands fa-youtube"></i>
             </a>
           </div>
         </div>

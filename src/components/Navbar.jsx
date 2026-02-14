@@ -5,30 +5,32 @@ import logo from "../assets/logo.png";
 export default function Navbar() {
   const [aboutOpen, setAboutOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <>
       {/* ================= TOP INFO BAR ================= */}
-      <div className="bg-[#1a1f2e] text-gray-300 text-sm">
+      <div className="bg-[#1a1f2e] text-gray-300 text-sm hidden lg:block">
         <div className="max-w-7xl mx-auto px-6 h-[44px] flex items-center justify-between">
 
           {/* Left Info */}
           <div className="flex items-center gap-6">
-            <span>📞 +91 91353 21898</span>
-            <span>✉️ info@nexabyte.in</span>
+            <span><i className="fa-solid fa-phone"></i> +91 91353 21898</span>
+            <span><i className="fa-solid fa-phone"></i> +91 81125 80707</span>
+            <span><i className="fa-solid fa-inbox"></i> info@nexabyte.in</span>
           </div>
 
           {/* Right Buttons */}
           <div className="flex items-center gap-4">
-            <button className="border border-gray-600 px-4 py-1 rounded text-sm hover:bg-gray-700 hover:text-white transition">
+            <a href="https://nexabyte.in" target="_blank" rel="noopener noreferrer" className="border border-gray-600 px-4 py-1 rounded text-sm hover:bg-gray-700 hover:text-white transition">
               Development Website
-            </button>
-            <button className="bg-blue-600 px-4 py-1 rounded hover:bg-blue-700 transition">
+            </a>
+            <Link to="/placement" className="bg-blue-600 px-4 py-1 rounded hover:bg-blue-700 transition">
               Our Placements
-            </button>
-            <button className="bg-gradient-to-r from-blue-500 to-cyan-500 px-4 py-1 rounded hover:from-blue-600 hover:to-cyan-600 transition">
+            </Link>
+            <a href="/brochure.pdf" download className="bg-gradient-to-r from-blue-500 to-cyan-500 px-4 py-1 rounded hover:from-blue-600 hover:to-cyan-600 transition">
               Download Brochure
-            </button>
+            </a>
           </div>
 
         </div>
@@ -43,12 +45,12 @@ export default function Navbar() {
             <img
               src={logo}
               alt="NexaByte Technologies Pvt Ltd"
-              className="h-full w-auto object-contain"
+              className="h-[150px] w-[250px] object-contain "
             />
           </Link>
 
-          {/* Menu */}
-          <ul className="flex items-center gap-8 text-[15px] font-medium text-white">
+          {/* Desktop Menu */}
+          <ul className="hidden lg:flex items-center gap-8 text-[15px] font-medium text-white">
             <li className="text-cyan-400 border-b-2 border-cyan-400 pb-1">
               <Link to="/">Home</Link>
             </li>
@@ -145,8 +147,8 @@ export default function Navbar() {
             <li><Link to="/contact" className="hover:text-cyan-400 transition">Contact</Link></li>
           </ul>
 
-          {/* CTA Buttons */}
-          <div className="flex items-center gap-4">
+          {/* Desktop CTA Buttons */}
+          <div className="hidden lg:flex items-center gap-4">
             <Link
               to="/verify"
               className="bg-white text-blue-900 px-5 py-2 rounded-lg font-semibold hover:bg-gray-200 transition shadow-lg"
@@ -161,7 +163,32 @@ export default function Navbar() {
             </Link>
           </div>
 
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="lg:hidden text-white text-2xl"
+          >
+            <i className={`fa-solid ${mobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+          </button>
+
         </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden bg-[#0f1729] border-t border-gray-700">
+            <ul className="flex flex-col text-white">
+              <li><Link to="/" onClick={() => setMobileMenuOpen(false)} className="block px-6 py-4 hover:bg-blue-900 transition">Home</Link></li>
+              <li><Link to="/about" onClick={() => setMobileMenuOpen(false)} className="block px-6 py-4 hover:bg-blue-900 transition">About Us</Link></li>
+              <li><Link to="/services" onClick={() => setMobileMenuOpen(false)} className="block px-6 py-4 hover:bg-blue-900 transition">Services</Link></li>
+              <li><Link to="/programs" onClick={() => setMobileMenuOpen(false)} className="block px-6 py-4 hover:bg-blue-900 transition">Programs</Link></li>
+              <li><Link to="/placement" onClick={() => setMobileMenuOpen(false)} className="block px-6 py-4 hover:bg-blue-900 transition">Placement</Link></li>
+              <li><Link to="/contact" onClick={() => setMobileMenuOpen(false)} className="block px-6 py-4 hover:bg-blue-900 transition">Contact</Link></li>
+              <li><Link to="/verify" onClick={() => setMobileMenuOpen(false)} className="block px-6 py-4 bg-blue-600 hover:bg-blue-700 transition">Verify Certificate</Link></li>
+              <li><Link to="/contact" onClick={() => setMobileMenuOpen(false)} className="block px-6 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 transition">Register Now</Link></li>
+            </ul>
+          </div>
+        )}
+
       </nav>
     </>
   );
