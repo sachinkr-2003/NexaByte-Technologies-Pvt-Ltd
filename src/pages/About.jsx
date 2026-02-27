@@ -2,30 +2,30 @@ export default function About() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white py-24 px-8 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white py-24 px-4 sm:px-6 lg:px-8 overflow-hidden pt-[72px] lg:pt-[116px]">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
         </div>
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <h1 className="text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight px-4">
             About <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">NexaByte</span>
           </h1>
-          <p className="text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
             Transforming Ideas into Digital Excellence Since 2019
           </p>
         </div>
       </section>
 
       {/* Company Story */}
-      <section className="py-24 bg-white">
+      <section id="company" className="py-16 sm:py-20 lg:py-24 bg-white scroll-mt-[72px] lg:scroll-mt-[116px]">
         <div className="max-w-6xl mx-auto px-8">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
               <div className="inline-block px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-4">
                 Our Story
               </div>
-              <h2 className="text-5xl font-bold text-gray-900 leading-tight">Building the Future of Technology</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">Building the Future of Technology</h2>
               <p className="text-lg text-gray-600 leading-relaxed">
                 NexaByte Technologies was founded with a vision to bridge the gap between innovative technology and business success. We are a premier IT services company specializing in enterprise-grade software solutions.
               </p>
@@ -48,10 +48,10 @@ export default function About() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50">
+      <section id="mission" className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-gray-50 to-blue-50 scroll-mt-[72px] lg:scroll-mt-[116px]">
         <div className="max-w-6xl mx-auto px-8">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-gray-900 mb-4">Mission & Vision</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">Mission & Vision</h2>
             <p className="text-xl text-gray-600">Guiding principles that drive our success</p>
           </div>
           <div className="grid md:grid-cols-2 gap-12">
@@ -81,7 +81,7 @@ export default function About() {
       <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">Our Core Values</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our Core Values</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">The fundamental beliefs that shape our culture and define who we are</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -118,10 +118,10 @@ export default function About() {
       </section>
 
       {/* Team Section */}
-      <section className="py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white">
+      <section id="team" className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white scroll-mt-[72px] lg:scroll-mt-[116px]">
         <div className="max-w-6xl mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold mb-6">Meet Our Expert Team</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Meet Our Expert Team</h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">Talented professionals committed to delivering exceptional results</p>
           </div>
           <div className="grid md:grid-cols-3 gap-10">
@@ -154,7 +154,7 @@ export default function About() {
       <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">Why Choose NexaByte?</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">Why Choose NexaByte?</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">What sets us apart in the competitive IT landscape</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -180,8 +180,8 @@ export default function About() {
       {/* CTA Section */}
       <section className="py-24 bg-gradient-to-r from-blue-600 to-cyan-500 text-white">
         <div className="max-w-4xl mx-auto px-8 text-center">
-          <h2 className="text-5xl font-bold mb-8">Let's Build Something Extraordinary</h2>
-          <p className="text-2xl mb-10 text-blue-100">Partner with us to transform your vision into reality</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8">Let's Build Something Extraordinary</h2>
+          <p className="text-lg sm:text-xl md:text-2xl mb-10 text-blue-100">Partner with us to transform your vision into reality</p>
           <div className="flex flex-wrap justify-center gap-6">
             <a href="/contact" className="inline-block bg-white text-blue-600 px-12 py-5 rounded-xl font-bold text-xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl">
               Start Your Project

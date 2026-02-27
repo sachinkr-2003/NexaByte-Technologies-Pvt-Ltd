@@ -35,10 +35,10 @@ export default function Verify() {
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
         </div>
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <h1 className="text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight px-4">
             Verify <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Certificate</span>
           </h1>
-          <p className="text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
             Authenticate your NexaByte training certificate
           </p>
         </div>
@@ -52,7 +52,7 @@ export default function Verify() {
               <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-5xl">🔍</span>
               </div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">Certificate Verification</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">Certificate Verification</h2>
               <p className="text-gray-600 text-lg">Enter your certificate ID to verify authenticity</p>
             </div>
 
@@ -85,7 +85,7 @@ export default function Verify() {
                   <div className="space-y-4">
                     <div className="flex items-center gap-3 mb-4">
                       <span className="text-5xl">✅</span>
-                      <h3 className="text-3xl font-bold text-green-700">Valid Certificate</h3>
+                      <h3 className="text-2xl sm:text-3xl font-bold text-green-700">Valid Certificate</h3>
                     </div>
                     <div className="space-y-3 text-lg">
                       <p><span className="font-semibold text-gray-700">Student Name:</span> <span className="text-gray-900">{result.name}</span></p>
@@ -97,7 +97,7 @@ export default function Verify() {
                 ) : (
                   <div className="text-center">
                     <span className="text-5xl mb-4 block">❌</span>
-                    <h3 className="text-3xl font-bold text-red-700 mb-2">Invalid Certificate</h3>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-red-700 mb-2">Invalid Certificate</h3>
                     <p className="text-gray-600 text-lg">The certificate ID you entered is not valid. Please check and try again.</p>
                   </div>
                 )}

@@ -14,10 +14,10 @@ export default function Contact() {
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
         </div>
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <h1 className="text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight px-4">
             Get In <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Touch</span>
           </h1>
-          <p className="text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
             Let's discuss how we can help transform your business
           </p>
         </div>
@@ -25,46 +25,46 @@ export default function Contact() {
 
       {/* Contact Section */}
       <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-8">
-          <div className="grid md:grid-cols-2 gap-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
             {/* Contact Form */}
-            <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
-              <p className="text-gray-600 mb-8 text-lg">Fill out the form below and we'll get back to you within 24 hours</p>
+            <div className="w-full">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 break-words">Send Us a Message</h2>
+              <p className="text-gray-600 mb-6 sm:mb-8 text-base sm:text-lg break-words">Fill out the form below and we'll get back to you within 24 hours</p>
               
-              <form className="space-y-6" onSubmit={handleSubmit}>
+              <form className="space-y-4 sm:space-y-6" onSubmit={handleSubmit}>
                 <div>
-                  <label className="block text-gray-700 font-semibold mb-2">Full Name *</label>
+                  <label className="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">Full Name *</label>
                   <input 
                     type="text" 
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none transition-colors" 
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none transition-colors text-sm sm:text-base" 
                     placeholder="John Doe"
                     required
                   />
                 </div>
                 
                 <div>
-                  <label className="block text-gray-700 font-semibold mb-2">Email Address *</label>
+                  <label className="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">Email Address *</label>
                   <input 
                     type="email" 
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none transition-colors" 
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none transition-colors text-sm sm:text-base" 
                     placeholder="john@example.com"
                     required
                   />
                 </div>
                 
                 <div>
-                  <label className="block text-gray-700 font-semibold mb-2">Phone Number</label>
+                  <label className="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">Phone Number</label>
                   <input 
                     type="tel" 
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none transition-colors" 
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none transition-colors text-sm sm:text-base" 
                     placeholder="+91 XXXXX XXXXX"
                   />
                 </div>
                 
                 <div>
-                  <label className="block text-gray-700 font-semibold mb-2">Subject *</label>
-                  <select className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none transition-colors" required>
+                  <label className="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">Subject *</label>
+                  <select className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none transition-colors text-sm sm:text-base" required>
                     <option value="">Select a subject</option>
                     <option value="service">Service Inquiry</option>
                     <option value="training">Training Program</option>
@@ -75,9 +75,9 @@ export default function Contact() {
                 </div>
                 
                 <div>
-                  <label className="block text-gray-700 font-semibold mb-2">Message *</label>
+                  <label className="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">Message *</label>
                   <textarea 
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none transition-colors h-32 resize-none" 
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none transition-colors h-32 resize-none text-sm sm:text-base" 
                     placeholder="Tell us about your project or inquiry..."
                     required
                   ></textarea>
@@ -85,7 +85,7 @@ export default function Contact() {
                 
                 <button 
                   type="submit" 
-                  className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-4 rounded-lg font-bold text-lg hover:shadow-xl transition-all transform hover:scale-105"
+                  className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg hover:shadow-xl transition-all transform hover:scale-105"
                 >
                   Send Message
                 </button>
@@ -93,22 +93,22 @@ export default function Contact() {
             </div>
 
             {/* Contact Information */}
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8 w-full">
               <div>
-                <h2 className="text-4xl font-bold text-gray-900 mb-6">Contact Information</h2>
-                <p className="text-gray-600 text-lg mb-8">Reach out to us through any of these channels</p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 break-words">Contact Information</h2>
+                <p className="text-gray-600 text-base sm:text-lg mb-6 sm:mb-8 break-words">Reach out to us through any of these channels</p>
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 {/* Office Address */}
-                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl border-2 border-blue-200">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <span className="text-3xl">📍</span>
+                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-4 sm:p-6 lg:p-8 rounded-2xl border-2 border-blue-200">
+                  <div className="flex items-start gap-3 sm:gap-4">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <span className="text-2xl sm:text-3xl">📍</span>
                     </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">Office Address</h3>
-                      <p className="text-gray-600 leading-relaxed">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-base sm:text-lg lg:text-xl font-bold text-gray-900 mb-2 break-words">Office Address</h3>
+                      <p className="text-sm sm:text-base text-gray-600 leading-relaxed break-words">
                         NexaByte Technologies Pvt. Ltd.<br />
                         Gomti Nagar, Lucknow<br />
                         Uttar Pradesh - 226010, India
@@ -118,30 +118,30 @@ export default function Contact() {
                 </div>
 
                 {/* Email */}
-                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl border-2 border-blue-200">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <span className="text-3xl">📧</span>
+                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-4 sm:p-6 lg:p-8 rounded-2xl border-2 border-blue-200">
+                  <div className="flex items-start gap-3 sm:gap-4">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <span className="text-2xl sm:text-3xl">📧</span>
                     </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">Email Us</h3>
-                      <p className="text-gray-600">
-                        <a href="mailto:info@nexabyte.com" className="hover:text-blue-600 transition-colors">info@nexabyte.com</a><br />
-                        <a href="mailto:careers@nexabyte.com" className="hover:text-blue-600 transition-colors">careers@nexabyte.com</a>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-base sm:text-lg lg:text-xl font-bold text-gray-900 mb-2 break-words">Email Us</h3>
+                      <p className="text-sm sm:text-base text-gray-600 break-words overflow-wrap-anywhere">
+                        <a href="mailto:info@nexabyte.com" className="hover:text-blue-600 transition-colors break-all">info@nexabyte.com</a><br />
+                        <a href="mailto:careers@nexabyte.com" className="hover:text-blue-600 transition-colors break-all">careers@nexabyte.com</a>
                       </p>
                     </div>
                   </div>
                 </div>
 
                 {/* Phone */}
-                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl border-2 border-blue-200">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <span className="text-3xl">📞</span>
+                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-4 sm:p-6 lg:p-8 rounded-2xl border-2 border-blue-200">
+                  <div className="flex items-start gap-3 sm:gap-4">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <span className="text-2xl sm:text-3xl">📞</span>
                     </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">Call Us</h3>
-                      <p className="text-gray-600">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-base sm:text-lg lg:text-xl font-bold text-gray-900 mb-2 break-words">Call Us</h3>
+                      <p className="text-sm sm:text-base text-gray-600 break-words">
                         <a href="tel:+919876543210" className="hover:text-blue-600 transition-colors">+91 98765 43210</a><br />
                         <a href="tel:+919876543211" className="hover:text-blue-600 transition-colors">+91 98765 43211</a>
                       </p>
@@ -150,14 +150,14 @@ export default function Contact() {
                 </div>
 
                 {/* Working Hours */}
-                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl border-2 border-blue-200">
-                  <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <span className="text-3xl">🕐</span>
+                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-4 sm:p-6 lg:p-8 rounded-2xl border-2 border-blue-200">
+                  <div className="flex items-start gap-3 sm:gap-4">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <span className="text-2xl sm:text-3xl">🕐</span>
                     </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">Working Hours</h3>
-                      <p className="text-gray-600">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-base sm:text-lg lg:text-xl font-bold text-gray-900 mb-2 break-words">Working Hours</h3>
+                      <p className="text-sm sm:text-base text-gray-600 break-words">
                         Monday - Friday: 9:00 AM - 6:00 PM<br />
                         Saturday: 9:00 AM - 2:00 PM<br />
                         Sunday: Closed
@@ -175,7 +175,7 @@ export default function Contact() {
       <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-6xl mx-auto px-8">
           <div className="text-center mb-12">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">Find Us Here</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">Find Us Here</h2>
             <p className="text-xl text-gray-600">Visit our office in Lucknow</p>
           </div>
           <div className="bg-white p-4 rounded-3xl shadow-2xl">
@@ -197,7 +197,7 @@ export default function Contact() {
       <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-8">
           <div className="text-center mb-12">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">Connect With Us</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">Connect With Us</h2>
             <p className="text-xl text-gray-600 mb-12">Follow us on social media for updates and insights</p>
           </div>
           <div className="flex justify-center gap-6">
@@ -224,7 +224,7 @@ export default function Contact() {
       <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-6xl mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
             <p className="text-xl text-gray-600">Quick answers to common questions</p>
           </div>
           <div className="space-y-6 max-w-4xl mx-auto">
@@ -251,8 +251,8 @@ export default function Contact() {
       {/* CTA Section */}
       <section className="py-24 bg-gradient-to-r from-blue-600 to-cyan-500 text-white">
         <div className="max-w-4xl mx-auto px-8 text-center">
-          <h2 className="text-5xl font-bold mb-8">Ready to Get Started?</h2>
-          <p className="text-2xl mb-10 text-blue-100">Let's turn your ideas into reality</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 px-4">Ready to Get Started?</h2>
+          <p className="text-lg sm:text-xl md:text-2xl mb-10 text-blue-100 px-4">Let's turn your ideas into reality</p>
           <div className="flex flex-wrap justify-center gap-6">
             <a href="tel:+919876543210" className="inline-block bg-white text-blue-600 px-12 py-5 rounded-xl font-bold text-xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl">
               Call Now

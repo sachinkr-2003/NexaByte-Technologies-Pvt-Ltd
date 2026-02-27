@@ -1,14 +1,19 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import logo from "../assets/logo.png";
+import DevWebsiteModal from "./DevWebsiteModal";
 
 export default function Navbar() {
   const [aboutOpen, setAboutOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [devWebsiteOpen, setDevWebsiteOpen] = useState(false);
 
   return (
-    <>
+    <div className="sticky top-0 z-50">
+      {/* Development Website Modal */}
+      <DevWebsiteModal isOpen={devWebsiteOpen} onClose={() => setDevWebsiteOpen(false)} />
+
       {/* ================= TOP INFO BAR ================= */}
       <div className="bg-[#1a1f2e] text-gray-300 text-sm hidden lg:block">
         <div className="max-w-7xl mx-auto px-6 h-[44px] flex items-center justify-between">
@@ -22,9 +27,13 @@ export default function Navbar() {
 
           {/* Right Buttons */}
           <div className="flex items-center gap-4">
-            <a href="https://nexabyte.in" target="_blank" rel="noopener noreferrer" className="border border-gray-600 px-4 py-1 rounded text-sm hover:bg-gray-700 hover:text-white transition">
+            <button 
+              onClick={() => setDevWebsiteOpen(true)}
+              className="border border-gray-600 px-4 py-1 rounded text-sm hover:bg-gray-700 hover:text-white transition inline-flex items-center gap-2"
+            >
               Development Website
-            </a>
+              <span className="text-xs">🚀</span>
+            </button>
             <Link to="/placement" className="bg-blue-600 px-4 py-1 rounded hover:bg-blue-700 transition">
               Our Placements
             </Link>
@@ -37,26 +46,27 @@ export default function Navbar() {
       </div>
 
       {/* ================= MAIN NAVBAR ================= */}
-      <nav className="sticky top-0 z-50 bg-gradient-to-r from-[#0f1729] via-[#1e3a8a] to-[#0f1729] shadow-xl">
-        <div className="max-w-7xl mx-auto px-6 h-[72px] flex items-center justify-between">
+      <nav className="bg-gradient-to-r from-[#0f1729] via-[#1e3a8a] to-[#0f1729] shadow-xl w-full">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 h-[72px] flex items-center justify-between">
 
           {/* Logo */}
-          <Link to="/" className="flex items-center h-full">
+          <Link to="/" className="flex items-center h-16 md:h-30">
             <img
               src={logo}
               alt="NexaByte Technologies Pvt Ltd"
-              className="h-[150px] w-[250px] object-contain "
+              className="h-full w-auto object-contain"
             />
           </Link>
 
           {/* Desktop Menu */}
           <ul className="hidden lg:flex items-center gap-8 text-[15px] font-medium text-white">
-            <li className="text-cyan-400 border-b-2 border-cyan-400 pb-1">
-              <Link to="/">Home</Link>
+            <li className="border-b-2 border-transparent hover:border-cyan-400 pb-1 transition-colors">
+              <a href="/">Home</a>
             </li>
             <li 
               className="relative"
               onMouseEnter={() => setAboutOpen(true)}
+              onMouseLeave={() => setAboutOpen(false)}
             >
               <Link to="/about" className="hover:text-cyan-400 transition flex items-center gap-1">
                 About Us
@@ -66,21 +76,21 @@ export default function Navbar() {
                 <>
                   <div className="fixed inset-0 z-40" onClick={() => setAboutOpen(false)}></div>
                   <div className="absolute top-full left-0 mt-4 bg-white rounded-xl shadow-2xl py-3 w-56 border border-gray-100 z-50">
-                    <Link to="/about" onClick={() => setAboutOpen(false)} className="flex items-center gap-3 px-5 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all group">
+                    <Link to="/about/company" onClick={() => setAboutOpen(false)} className="flex items-center gap-3 px-5 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all group">
                       <span className="text-2xl">🏛️</span>
                       <div>
                         <p className="text-gray-900 font-semibold group-hover:text-blue-600">Company</p>
                         <p className="text-xs text-gray-500">About NexaByte</p>
                       </div>
                     </Link>
-                    <Link to="/about#team" onClick={() => setAboutOpen(false)} className="flex items-center gap-3 px-5 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all group">
+                    <Link to="/about/team" onClick={() => setAboutOpen(false)} className="flex items-center gap-3 px-5 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all group">
                       <span className="text-2xl">👥</span>
                       <div>
                         <p className="text-gray-900 font-semibold group-hover:text-blue-600">Our Team</p>
                         <p className="text-xs text-gray-500">Meet the experts</p>
                       </div>
                     </Link>
-                    <Link to="/about#mission" onClick={() => setAboutOpen(false)} className="flex items-center gap-3 px-5 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all group">
+                    <Link to="/about/mission-vision" onClick={() => setAboutOpen(false)} className="flex items-center gap-3 px-5 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all group">
                       <span className="text-2xl">🎯</span>
                       <div>
                         <p className="text-gray-900 font-semibold group-hover:text-blue-600">Mission & Vision</p>
@@ -94,6 +104,7 @@ export default function Navbar() {
             <li 
               className="relative"
               onMouseEnter={() => setServicesOpen(true)}
+              onMouseLeave={() => setServicesOpen(false)}
             >
               <Link to="/services" className="hover:text-cyan-400 transition flex items-center gap-1">
                 Services
@@ -190,6 +201,6 @@ export default function Navbar() {
         )}
 
       </nav>
-    </>
+    </div>
   );
 }

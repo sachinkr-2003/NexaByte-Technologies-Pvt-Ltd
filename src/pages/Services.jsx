@@ -8,10 +8,10 @@ export default function Services() {
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
         </div>
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <h1 className="text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight px-4">
             Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Services</span>
           </h1>
-          <p className="text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
             Comprehensive IT solutions tailored to your business needs
           </p>
         </div>
@@ -21,7 +21,7 @@ export default function Services() {
       <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">What We Offer</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">What We Offer</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">End-to-end technology solutions for modern businesses</p>
           </div>
           
@@ -36,7 +36,7 @@ export default function Services() {
                 />
               </div>
               <div className="order-1 md:order-2 space-y-4">
-                <h3 className="text-3xl font-bold text-gray-900 mb-6">Enterprise-Grade Solutions</h3>
+                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Enterprise-Grade Solutions</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <span className="text-blue-600 text-xl">✓</span>
@@ -65,7 +65,7 @@ export default function Services() {
             {/* Web Development */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-4">
-                <h3 className="text-3xl font-bold text-gray-900 mb-6">Modern Web Solutions</h3>
+                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Modern Web Solutions</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <span className="text-blue-600 text-xl">✓</span>
@@ -108,7 +108,7 @@ export default function Services() {
                 />
               </div>
               <div className="order-1 md:order-2 space-y-4">
-                <h3 className="text-3xl font-bold text-gray-900 mb-6">Mobile Excellence</h3>
+                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Mobile Excellence</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <span className="text-blue-600 text-xl">✓</span>
@@ -137,7 +137,7 @@ export default function Services() {
             {/* Cloud & DevOps */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-4">
-                <h3 className="text-3xl font-bold text-gray-900 mb-6">Cloud Infrastructure</h3>
+                <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Cloud Infrastructure</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <span className="text-blue-600 text-xl">✓</span>
@@ -177,7 +177,7 @@ export default function Services() {
       <section className="py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white">
         <div className="max-w-6xl mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold mb-6">Technologies We Use</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Technologies We Use</h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">Cutting-edge tools and frameworks</p>
           </div>
           <div className="grid md:grid-cols-5 gap-6">
@@ -209,7 +209,7 @@ export default function Services() {
       <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">Our Development Process</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our Development Process</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">A proven methodology for successful project delivery</p>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
@@ -241,7 +241,7 @@ export default function Services() {
       <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-6xl mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">Why Choose Our Services?</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">Why Choose Our Services?</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">Benefits that set us apart</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -282,8 +282,8 @@ export default function Services() {
       {/* CTA Section */}
       <section className="py-24 bg-gradient-to-r from-blue-600 to-cyan-500 text-white">
         <div className="max-w-4xl mx-auto px-8 text-center">
-          <h2 className="text-5xl font-bold mb-8">Ready to Start Your Project?</h2>
-          <p className="text-2xl mb-10 text-blue-100">Let's discuss how we can help you achieve your goals</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 px-4">Ready to Start Your Project?</h2>
+          <p className="text-lg sm:text-xl md:text-2xl mb-10 text-blue-100 px-4">Let's discuss how we can help you achieve your goals</p>
           <div className="flex flex-wrap justify-center gap-6">
             <a href="/contact" className="inline-block bg-white text-blue-600 px-12 py-5 rounded-xl font-bold text-xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl">
               Get a Free Quote

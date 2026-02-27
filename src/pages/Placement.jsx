@@ -8,10 +8,10 @@ export default function Placement() {
           <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
         </div>
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <h1 className="text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight px-4">
             100% <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Placement Assurance</span>
           </h1>
-          <p className="text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
             Your success is our commitment - Join thousands of placed candidates
           </p>
         </div>
@@ -21,24 +21,24 @@ export default function Placement() {
       <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">Placement Statistics</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">Placement Statistics</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">Our track record speaks for itself</p>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
             <div className="bg-gradient-to-br from-blue-600 to-cyan-500 p-10 rounded-3xl text-center text-white shadow-2xl transform hover:scale-105 transition-all">
-              <h3 className="text-6xl font-bold mb-4">100%</h3>
+              <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">100%</h3>
               <p className="text-xl font-semibold">Placement Rate</p>
             </div>
             <div className="bg-gradient-to-br from-blue-600 to-cyan-500 p-10 rounded-3xl text-center text-white shadow-2xl transform hover:scale-105 transition-all">
-              <h3 className="text-6xl font-bold mb-4">1000+</h3>
+              <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">1000+</h3>
               <p className="text-xl font-semibold">Students Placed</p>
             </div>
             <div className="bg-gradient-to-br from-blue-600 to-cyan-500 p-10 rounded-3xl text-center text-white shadow-2xl transform hover:scale-105 transition-all">
-              <h3 className="text-6xl font-bold mb-4">150+</h3>
+              <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">150+</h3>
               <p className="text-xl font-semibold">Hiring Partners</p>
             </div>
             <div className="bg-gradient-to-br from-blue-600 to-cyan-500 p-10 rounded-3xl text-center text-white shadow-2xl transform hover:scale-105 transition-all">
-              <h3 className="text-6xl font-bold mb-4">12 LPA</h3>
+              <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">12 LPA</h3>
               <p className="text-xl font-semibold">Highest Package</p>
             </div>
           </div>
@@ -49,7 +49,7 @@ export default function Placement() {
       <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-6xl mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">Our Hiring Partners</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our Hiring Partners</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">Top companies trust our talent</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -85,7 +85,7 @@ export default function Placement() {
       <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">Our Placement Process</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our Placement Process</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">Step-by-step journey to your dream job</p>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
@@ -117,7 +117,7 @@ export default function Placement() {
       <section className="py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white">
         <div className="max-w-6xl mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold mb-6">Success Stories</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">Success Stories</h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">Real stories from our placed students</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -156,7 +156,7 @@ export default function Placement() {
       <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">Placement Assurance Terms</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">Placement Assurance Terms</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">What you need to know</p>
           </div>
           <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-12 rounded-3xl border-2 border-blue-200">
@@ -215,7 +215,7 @@ export default function Placement() {
       <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-6xl mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">Placement Support Services</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">Placement Support Services</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">Comprehensive support for your career success</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -256,8 +256,8 @@ export default function Placement() {
       {/* CTA Section */}
       <section className="py-24 bg-gradient-to-r from-blue-600 to-cyan-500 text-white">
         <div className="max-w-4xl mx-auto px-8 text-center">
-          <h2 className="text-5xl font-bold mb-8">Ready to Launch Your Career?</h2>
-          <p className="text-2xl mb-10 text-blue-100">Join our placement program and get your dream job</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 px-4">Ready to Launch Your Career?</h2>
+          <p className="text-lg sm:text-xl md:text-2xl mb-10 text-blue-100 px-4">Join our placement program and get your dream job</p>
           <div className="flex flex-wrap justify-center gap-6">
             <a href="/contact" className="inline-block bg-white text-blue-600 px-12 py-5 rounded-xl font-bold text-xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl">
               Apply Now

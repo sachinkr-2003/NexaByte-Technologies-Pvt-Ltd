@@ -1,9 +1,13 @@
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Loader from "./components/Loader";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Company from "./pages/about/Company";
+import Team from "./pages/about/Team";
+import MissionVision from "./pages/about/MissionVision";
 import Services from "./pages/Services";
 import Programs from "./pages/Programs";
 import Placement from "./pages/Placement";
@@ -11,24 +15,25 @@ import Contact from "./pages/Contact";
 import Verify from "./pages/Verify";
 import NotFound from "./pages/NotFound";
 
-function ScrollToTop() {
-  const { pathname } = useLocation();
+export default function App() {
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    const timer = setTimeout(() => setLoading(false), 1200);
+    return () => clearTimeout(timer);
+  }, []);
 
-  return null;
-}
+  if (loading) return <Loader />;
 
-export default function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/about/company" element={<Company />} />
+        <Route path="/about/team" element={<Team />} />
+        <Route path="/about/mission-vision" element={<MissionVision />} />
         <Route path="/services" element={<Services />} />
         <Route path="/programs" element={<Programs />} />
         <Route path="/placement" element={<Placement />} />
