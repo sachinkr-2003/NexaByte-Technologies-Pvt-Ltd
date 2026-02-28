@@ -246,32 +246,32 @@ export default function Services() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl mb-4">⚡</div>
+              <div className="text-4xl mb-4"><i className="fa-solid fa-bolt"></i></div>
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Fast Turnaround</h3>
               <p className="text-gray-600 leading-relaxed">Agile development ensures quick delivery without compromising quality.</p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl mb-4">💰</div>
+              <div className="text-4xl mb-4"><i className="fa-solid fa-dollar-sign"></i></div>
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Cost-Effective</h3>
               <p className="text-gray-600 leading-relaxed">Competitive pricing with transparent billing and no hidden costs.</p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl mb-4">🔒</div>
+              <div className="text-4xl mb-4"><i className="fa-solid fa-lock"></i></div>
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Secure & Reliable</h3>
               <p className="text-gray-600 leading-relaxed">Enterprise-grade security and 99.9% uptime guarantee.</p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl mb-4">🎯</div>
+              <div className="text-4xl mb-4"><i className="fa-solid fa-bullseye"></i></div>
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Dedicated Support</h3>
               <p className="text-gray-600 leading-relaxed">24/7 technical support and maintenance services.</p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl mb-4">📈</div>
+              <div className="text-4xl mb-4"><i className="fa-solid fa-chart-line"></i></div>
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Scalable Solutions</h3>
               <p className="text-gray-600 leading-relaxed">Built to grow with your business needs.</p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl mb-4">🏆</div>
+              <div className="text-4xl mb-4"><i className="fa-solid fa-trophy"></i></div>
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Proven Track Record</h3>
               <p className="text-gray-600 leading-relaxed">500+ successful projects delivered to satisfied clients.</p>
             </div>

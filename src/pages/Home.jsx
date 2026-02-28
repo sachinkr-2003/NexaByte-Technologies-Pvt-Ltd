@@ -115,14 +115,14 @@ export default function Home() {
             </div>
             <div className="text-center space-y-3 sm:space-y-4">
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto">
-                <span className="text-3xl sm:text-4xl">💼</span>
+                <i className="fa-solid fa-briefcase text-white text-3xl sm:text-4xl"></i>
               </div>
               <h3 className="text-base sm:text-xl font-bold">Expert Team</h3>
               <p className="text-xs sm:text-base text-gray-600">Skilled professionals with years of experience</p>
             </div>
             <div className="text-center space-y-3 sm:space-y-4">
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto">
-                <span className="text-3xl sm:text-4xl">🎯</span>
+                <i className="fa-solid fa-bullseye text-white text-3xl sm:text-4xl"></i>
               </div>
               <h3 className="text-base sm:text-xl font-bold">Result Driven</h3>
               <p className="text-xs sm:text-base text-gray-600">Focused on achieving your business goals</p>
@@ -229,7 +229,7 @@ export default function Home() {
           </div>
           <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 rounded-xl border-2 border-blue-200">
-              <h3 className="text-xl sm:text-2xl font-bold mb-4">🎓 Summer Training</h3>
+              <h3 className="text-xl sm:text-2xl font-bold mb-4"><i className="fa-solid fa-sun"></i> Summer Training</h3>
               <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-700">
                 <li>✓ 6-8 weeks intensive program</li>
                 <li>✓ Live project experience</li>
@@ -241,7 +241,7 @@ export default function Home() {
               </a>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 rounded-xl border-2 border-blue-200">
-              <h3 className="text-xl sm:text-2xl font-bold mb-4">💼 Industrial Training</h3>
+              <h3 className="text-xl sm:text-2xl font-bold mb-4"><i className="fa-solid fa-industry"></i> Industrial Training</h3>
               <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-700">
                 <li>✓ 3-6 months comprehensive training</li>
                 <li>✓ Real-world projects</li>

@@ -40,10 +40,10 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li>📍 Lucknow, Uttar Pradesh</li>
-              <li>📧 info@nexabyte.in</li>
-              <li>📞 +91 91353 21898</li>
-              <li>📞 +91 81125 80707</li>
+              <li><i className="fa-solid fa-location-dot"></i> Lucknow, Uttar Pradesh</li>
+              <li><i className="fa-solid fa-envelope"></i> info@nexabyte.in</li>
+              <li><i className="fa-solid fa-phone"></i> +91 91353 21898</li>
+              <li><i className="fa-solid fa-phone"></i> +91 81125 80707</li>
             </ul>
             <div className="flex gap-4 mt-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-blue-600 transition-all"><i className="fa-brands fa-facebook"></i></a>

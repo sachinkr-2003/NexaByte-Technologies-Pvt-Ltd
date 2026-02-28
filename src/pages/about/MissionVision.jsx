@@ -19,7 +19,7 @@ export default function MissionVision() {
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 sm:p-10 lg:p-12 rounded-3xl shadow-xl hover:shadow-2xl transition-all">
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mb-6 sm:mb-8">
-                <span className="text-4xl sm:text-5xl">🎯</span>
+                <i className="fa-solid fa-bullseye text-white text-4xl sm:text-5xl"></i>
               </div>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-gray-900">Our Mission</h2>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-6">
@@ -31,7 +31,7 @@ export default function MissionVision() {
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 sm:p-10 lg:p-12 rounded-3xl shadow-xl hover:shadow-2xl transition-all">
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mb-6 sm:mb-8">
-                <span className="text-4xl sm:text-5xl">🔭</span>
+                <i className="fa-solid fa-binoculars text-white text-4xl sm:text-5xl"></i>
               </div>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-gray-900">Our Vision</h2>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-6">
@@ -57,28 +57,28 @@ export default function MissionVision() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all text-center">
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <span className="text-3xl sm:text-4xl">💡</span>
+                <i className="fa-solid fa-lightbulb text-white text-3xl sm:text-4xl"></i>
               </div>
               <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-gray-900">Innovation</h3>
               <p className="text-sm sm:text-base text-gray-600">Constantly pushing boundaries with creative solutions</p>
             </div>
             <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all text-center">
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <span className="text-3xl sm:text-4xl">✨</span>
+                <i className="fa-solid fa-star text-white text-3xl sm:text-4xl"></i>
               </div>
               <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-gray-900">Excellence</h3>
               <p className="text-sm sm:text-base text-gray-600">Delivering superior quality in every project</p>
             </div>
             <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all text-center">
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <span className="text-3xl sm:text-4xl">🤝</span>
+                <i className="fa-solid fa-handshake text-white text-3xl sm:text-4xl"></i>
               </div>
               <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-gray-900">Integrity</h3>
               <p className="text-sm sm:text-base text-gray-600">Building trust through honesty and transparency</p>
             </div>
             <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all text-center">
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <span className="text-3xl sm:text-4xl">🚀</span>
+                <i className="fa-solid fa-rocket text-white text-3xl sm:text-4xl"></i>
               </div>
               <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-gray-900">Growth</h3>
               <p className="text-sm sm:text-base text-gray-600">Embracing continuous learning and improvement</p>
@@ -134,17 +134,17 @@ export default function MissionVision() {
           </div>
           <div className="grid sm:grid-cols-3 gap-6 sm:gap-8">
             <div className="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-xl text-center hover:bg-white/20 transition-all">
-              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🎯</div>
+              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4"><i className="fa-solid fa-bullseye"></i></div>
               <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Quality First</h3>
               <p className="text-sm sm:text-base text-gray-300">Never compromising on quality, security, or performance</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-xl text-center hover:bg-white/20 transition-all">
-              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">⏱️</div>
+              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4"><i className="fa-solid fa-clock"></i></div>
               <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">On-Time Delivery</h3>
               <p className="text-sm sm:text-base text-gray-300">Meeting deadlines with efficient project management</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-xl text-center hover:bg-white/20 transition-all">
-              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">💬</div>
+              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4"><i className="fa-solid fa-comments"></i></div>
               <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Clear Communication</h3>
               <p className="text-sm sm:text-base text-gray-300">Transparent updates throughout the project lifecycle</p>
             </div>

@@ -29,7 +29,7 @@ export default function Programs() {
             {/* Summer Training */}
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 lg:p-10 rounded-3xl border-2 border-blue-200 hover:shadow-2xl transition-all">
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mb-6">
-                <span className="text-4xl sm:text-5xl">🌞</span>
+                <i className="fa-solid fa-sun text-white text-4xl sm:text-5xl"></i>
               </div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-900">Summer Training</h3>
               <p className="text-gray-600 mb-4 sm:mb-6 text-base sm:text-lg">6-8 weeks intensive program for students during summer break</p>
@@ -76,7 +76,7 @@ export default function Programs() {
             {/* Industrial Training */}
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 lg:p-10 rounded-3xl border-2 border-blue-200 hover:shadow-2xl transition-all">
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mb-6">
-                <span className="text-4xl sm:text-5xl">🏭</span>
+                <i className="fa-solid fa-industry text-white text-4xl sm:text-5xl"></i>
               </div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-900">Industrial Training</h3>
               <p className="text-gray-600 mb-4 sm:mb-6 text-base sm:text-lg">3-6 months comprehensive training with real-world projects</p>
@@ -123,7 +123,7 @@ export default function Programs() {
             {/* Project-Based Internship */}
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 lg:p-10 rounded-3xl border-2 border-blue-200 hover:shadow-2xl transition-all">
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mb-6">
-                <span className="text-4xl sm:text-5xl">💼</span>
+                <i className="fa-solid fa-briefcase text-white text-4xl sm:text-5xl"></i>
               </div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-900">Project-Based Internship</h3>
               <p className="text-gray-600 mb-4 sm:mb-6 text-base sm:text-lg">2-4 months internship working on live client projects</p>
@@ -170,7 +170,7 @@ export default function Programs() {
             {/* Apprenticeship Program */}
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 lg:p-10 rounded-3xl border-2 border-blue-200 hover:shadow-2xl transition-all">
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mb-6">
-                <span className="text-4xl sm:text-5xl">🎓</span>
+                <i className="fa-solid fa-graduation-cap text-white text-4xl sm:text-5xl"></i>
               </div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-900">Apprenticeship Program</h3>
               <p className="text-gray-600 mb-4 sm:mb-6 text-base sm:text-lg">6-12 months earn-while-you-learn program</p>
@@ -258,32 +258,32 @@ export default function Programs() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 rounded-2xl border-2 border-blue-200">
-              <div className="text-4xl mb-4">👨🏫</div>
+              <div className="text-4xl mb-4"><i className="fa-solid fa-chalkboard-user"></i></div>
               <h3 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900">Expert Trainers</h3>
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">Learn from industry professionals with 10+ years of experience</p>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 rounded-2xl border-2 border-blue-200">
-              <div className="text-4xl mb-4">💻</div>
+              <div className="text-4xl mb-4"><i className="fa-solid fa-laptop-code"></i></div>
               <h3 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900">Hands-On Learning</h3>
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">Work on real projects and build your portfolio</p>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 rounded-2xl border-2 border-blue-200">
-              <div className="text-4xl mb-4">🎯</div>
+              <div className="text-4xl mb-4"><i className="fa-solid fa-bullseye"></i></div>
               <h3 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900">100% Placement</h3>
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">Guaranteed placement assistance for eligible candidates</p>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 rounded-2xl border-2 border-blue-200">
-              <div className="text-4xl mb-4">📜</div>
+              <div className="text-4xl mb-4"><i className="fa-solid fa-certificate"></i></div>
               <h3 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900">Certification</h3>
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">Industry-recognized certificates to boost your resume</p>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 rounded-2xl border-2 border-blue-200">
-              <div className="text-4xl mb-4">🤝</div>
+              <div className="text-4xl mb-4"><i className="fa-solid fa-handshake"></i></div>
               <h3 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900">Mentorship</h3>
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">One-on-one guidance throughout your learning journey</p>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 rounded-2xl border-2 border-blue-200">
-              <div className="text-4xl mb-4">💼</div>
+              <div className="text-4xl mb-4"><i className="fa-solid fa-briefcase"></i></div>
               <h3 className="text-xl sm:text-2xl font-bold mb-4 text-gray-900">Career Support</h3>
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">Resume building, interview prep, and job referrals</p>
             </div>

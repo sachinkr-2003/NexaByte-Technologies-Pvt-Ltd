@@ -50,7 +50,7 @@ export default function Verify() {
           <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-12 rounded-3xl border-2 border-blue-200 shadow-2xl">
             <div className="text-center mb-8">
               <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-5xl">🔍</span>
+                <i className="fa-solid fa-magnifying-glass text-white text-5xl"></i>
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">Certificate Verification</h2>
               <p className="text-gray-600 text-lg">Enter your certificate ID to verify authenticity</p>
@@ -84,7 +84,7 @@ export default function Verify() {
                 {result.valid ? (
                   <div className="space-y-4">
                     <div className="flex items-center gap-3 mb-4">
-                      <span className="text-5xl">✅</span>
+                      <i className="fa-solid fa-circle-check text-green-600 text-5xl"></i>
                       <h3 className="text-2xl sm:text-3xl font-bold text-green-700">Valid Certificate</h3>
                     </div>
                     <div className="space-y-3 text-lg">
@@ -96,7 +96,7 @@ export default function Verify() {
                   </div>
                 ) : (
                   <div className="text-center">
-                    <span className="text-5xl mb-4 block">❌</span>
+                    <i className="fa-solid fa-circle-xmark text-red-600 text-5xl mb-4 block"></i>
                     <h3 className="text-2xl sm:text-3xl font-bold text-red-700 mb-2">Invalid Certificate</h3>
                     <p className="text-gray-600 text-lg">The certificate ID you entered is not valid. Please check and try again.</p>
                   </div>

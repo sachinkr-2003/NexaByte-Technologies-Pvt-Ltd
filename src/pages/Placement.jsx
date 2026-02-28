@@ -123,7 +123,7 @@ export default function Placement() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white/10 backdrop-blur-sm p-10 rounded-3xl hover:bg-white/20 transition-all">
               <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl">👨💼</span>
+                <i className="fa-solid fa-user-tie text-white text-3xl"></i>
               </div>
               <h3 className="text-2xl font-bold mb-2 text-center">Amit Sharma</h3>
               <p className="text-center text-blue-200 mb-4">Software Engineer @ TCS</p>
@@ -132,7 +132,7 @@ export default function Placement() {
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-10 rounded-3xl hover:bg-white/20 transition-all">
               <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl">👩💼</span>
+                <i className="fa-solid fa-user-tie text-white text-3xl"></i>
               </div>
               <h3 className="text-2xl font-bold mb-2 text-center">Priya Gupta</h3>
               <p className="text-center text-blue-200 mb-4">Full Stack Developer @ Infosys</p>
@@ -141,7 +141,7 @@ export default function Placement() {
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-10 rounded-3xl hover:bg-white/20 transition-all">
               <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl">👨💼</span>
+                <i className="fa-solid fa-user-tie text-white text-3xl"></i>
               </div>
               <h3 className="text-2xl font-bold mb-2 text-center">Rahul Singh</h3>
               <p className="text-center text-blue-200 mb-4">Java Developer @ Wipro</p>
@@ -220,32 +220,32 @@ export default function Placement() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl mb-4">📝</div>
+              <div className="text-4xl mb-4"><i className="fa-solid fa-file-lines"></i></div>
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Resume Building</h3>
               <p className="text-gray-600 leading-relaxed">Professional resume creation and optimization to stand out</p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl mb-4">🎤</div>
+              <div className="text-4xl mb-4"><i className="fa-solid fa-microphone"></i></div>
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Mock Interviews</h3>
               <p className="text-gray-600 leading-relaxed">Practice sessions with industry experts and feedback</p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl mb-4">💡</div>
+              <div className="text-4xl mb-4"><i className="fa-solid fa-lightbulb"></i></div>
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Aptitude Training</h3>
               <p className="text-gray-600 leading-relaxed">Quantitative, logical, and verbal reasoning preparation</p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl mb-4">🗣️</div>
+              <div className="text-4xl mb-4"><i className="fa-solid fa-comments"></i></div>
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Soft Skills</h3>
               <p className="text-gray-600 leading-relaxed">Communication, presentation, and personality development</p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl mb-4">🔗</div>
+              <div className="text-4xl mb-4"><i className="fa-brands fa-linkedin"></i></div>
               <h3 className="text-2xl font-bold mb-4 text-gray-900">LinkedIn Profile</h3>
               <p className="text-gray-600 leading-relaxed">Professional profile optimization and networking guidance</p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg">
-              <div className="text-4xl mb-4">🎯</div>
+              <div className="text-4xl mb-4"><i className="fa-solid fa-bullseye"></i></div>
               <h3 className="text-2xl font-bold mb-4 text-gray-900">Career Counseling</h3>
               <p className="text-gray-600 leading-relaxed">One-on-one guidance for career path selection</p>
             </div>

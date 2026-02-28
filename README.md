@@ -14,6 +14,7 @@ Modern, responsive website for NexaByte Technologies built with React, Vite, and
 - ✅ Social media integration
 - ✅ 404 error page
 - ✅ Mobile hamburger menu
+- ✅ Font Awesome icons throughout
 
 ## 📦 Tech Stack
 

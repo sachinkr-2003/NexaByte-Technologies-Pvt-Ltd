@@ -73,32 +73,32 @@ export default function Company() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
-              <div className="text-3xl sm:text-4xl mb-4">💻</div>
+              <div className="text-3xl sm:text-4xl mb-4"><i className="fa-solid fa-laptop-code"></i></div>
               <h3 className="text-lg sm:text-xl font-bold mb-3 text-gray-900">Custom Software Development</h3>
               <p className="text-sm sm:text-base text-gray-600">Tailored solutions built with cutting-edge technologies to meet your unique business needs.</p>
             </div>
             <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
-              <div className="text-3xl sm:text-4xl mb-4">🌐</div>
+              <div className="text-3xl sm:text-4xl mb-4"><i className="fa-solid fa-globe"></i></div>
               <h3 className="text-lg sm:text-xl font-bold mb-3 text-gray-900">Web & Mobile Apps</h3>
               <p className="text-sm sm:text-base text-gray-600">Responsive and intuitive applications for all platforms with seamless user experience.</p>
             </div>
             <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
-              <div className="text-3xl sm:text-4xl mb-4">☁️</div>
+              <div className="text-3xl sm:text-4xl mb-4"><i className="fa-solid fa-cloud"></i></div>
               <h3 className="text-lg sm:text-xl font-bold mb-3 text-gray-900">Cloud & DevOps</h3>
               <p className="text-sm sm:text-base text-gray-600">Scalable infrastructure and seamless deployment for modern cloud-native applications.</p>
             </div>
             <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
-              <div className="text-3xl sm:text-4xl mb-4">🎓</div>
+              <div className="text-3xl sm:text-4xl mb-4"><i className="fa-solid fa-graduation-cap"></i></div>
               <h3 className="text-lg sm:text-xl font-bold mb-3 text-gray-900">Training Programs</h3>
               <p className="text-sm sm:text-base text-gray-600">Industry-certified training with 100% placement assistance for eligible candidates.</p>
             </div>
             <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
-              <div className="text-3xl sm:text-4xl mb-4">🔒</div>
+              <div className="text-3xl sm:text-4xl mb-4"><i className="fa-solid fa-lock"></i></div>
               <h3 className="text-lg sm:text-xl font-bold mb-3 text-gray-900">Security Solutions</h3>
               <p className="text-sm sm:text-base text-gray-600">Enterprise-grade security protocols protecting your data and applications.</p>
             </div>
             <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all">
-              <div className="text-3xl sm:text-4xl mb-4">📊</div>
+              <div className="text-3xl sm:text-4xl mb-4"><i className="fa-solid fa-chart-bar"></i></div>
               <h3 className="text-lg sm:text-xl font-bold mb-3 text-gray-900">Consulting Services</h3>
               <p className="text-sm sm:text-base text-gray-600">Expert guidance to help you make informed technology decisions.</p>
             </div>
@@ -116,21 +116,21 @@ export default function Company() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <div className="text-center space-y-3 sm:space-y-4">
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto">
-                <span className="text-2xl sm:text-3xl">⚡</span>
+                <i className="fa-solid fa-bolt text-white text-2xl sm:text-3xl"></i>
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-gray-900">Fast Delivery</h3>
               <p className="text-sm sm:text-base text-gray-600">Quick turnaround without compromising quality</p>
             </div>
             <div className="text-center space-y-3 sm:space-y-4">
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto">
-                <span className="text-2xl sm:text-3xl">🛡️</span>
+                <i className="fa-solid fa-shield-halved text-white text-2xl sm:text-3xl"></i>
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-gray-900">Secure Solutions</h3>
               <p className="text-sm sm:text-base text-gray-600">Enterprise-grade security standards</p>
             </div>
             <div className="text-center space-y-3 sm:space-y-4">
               <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto">
-                <span className="text-2xl sm:text-3xl">💼</span>
+                <i className="fa-solid fa-briefcase text-white text-2xl sm:text-3xl"></i>
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-gray-900">Expert Team</h3>
               <p className="text-sm sm:text-base text-gray-600">Skilled professionals with years of experience</p>

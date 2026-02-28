@@ -104,7 +104,7 @@ export default function Contact() {
                 <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-4 sm:p-6 lg:p-8 rounded-2xl border-2 border-blue-200">
                   <div className="flex items-start gap-3 sm:gap-4">
                     <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <span className="text-2xl sm:text-3xl">📍</span>
+                      <i className="fa-solid fa-location-dot text-white text-2xl sm:text-3xl"></i>
                     </div>
                     <div className="flex-1 min-w-0">
                       <h3 className="text-base sm:text-lg lg:text-xl font-bold text-gray-900 mb-2 break-words">Office Address</h3>
@@ -121,7 +121,7 @@ export default function Contact() {
                 <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-4 sm:p-6 lg:p-8 rounded-2xl border-2 border-blue-200">
                   <div className="flex items-start gap-3 sm:gap-4">
                     <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <span className="text-2xl sm:text-3xl">📧</span>
+                      <i className="fa-solid fa-envelope text-white text-2xl sm:text-3xl"></i>
                     </div>
                     <div className="flex-1 min-w-0">
                       <h3 className="text-base sm:text-lg lg:text-xl font-bold text-gray-900 mb-2 break-words">Email Us</h3>
@@ -137,7 +137,7 @@ export default function Contact() {
                 <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-4 sm:p-6 lg:p-8 rounded-2xl border-2 border-blue-200">
                   <div className="flex items-start gap-3 sm:gap-4">
                     <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <span className="text-2xl sm:text-3xl">📞</span>
+                      <i className="fa-solid fa-phone text-white text-2xl sm:text-3xl"></i>
                     </div>
                     <div className="flex-1 min-w-0">
                       <h3 className="text-base sm:text-lg lg:text-xl font-bold text-gray-900 mb-2 break-words">Call Us</h3>
@@ -153,7 +153,7 @@ export default function Contact() {
                 <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-4 sm:p-6 lg:p-8 rounded-2xl border-2 border-blue-200">
                   <div className="flex items-start gap-3 sm:gap-4">
                     <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <span className="text-2xl sm:text-3xl">🕐</span>
+                      <i className="fa-solid fa-clock text-white text-2xl sm:text-3xl"></i>
                     </div>
                     <div className="flex-1 min-w-0">
                       <h3 className="text-base sm:text-lg lg:text-xl font-bold text-gray-900 mb-2 break-words">Working Hours</h3>

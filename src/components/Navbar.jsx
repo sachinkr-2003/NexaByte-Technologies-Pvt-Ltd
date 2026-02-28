@@ -1,19 +1,14 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import logo from "../assets/logo.png";
-import DevWebsiteModal from "./DevWebsiteModal";
 
 export default function Navbar() {
   const [aboutOpen, setAboutOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [devWebsiteOpen, setDevWebsiteOpen] = useState(false);
 
   return (
     <div className="sticky top-0 z-50">
-      {/* Development Website Modal */}
-      <DevWebsiteModal isOpen={devWebsiteOpen} onClose={() => setDevWebsiteOpen(false)} />
-
       {/* ================= TOP INFO BAR ================= */}
       <div className="bg-[#1a1f2e] text-gray-300 text-sm hidden lg:block">
         <div className="max-w-7xl mx-auto px-6 h-[44px] flex items-center justify-between">
@@ -27,13 +22,6 @@ export default function Navbar() {
 
           {/* Right Buttons */}
           <div className="flex items-center gap-4">
-            <button 
-              onClick={() => setDevWebsiteOpen(true)}
-              className="border border-gray-600 px-4 py-1 rounded text-sm hover:bg-gray-700 hover:text-white transition inline-flex items-center gap-2"
-            >
-              Development Website
-              <span className="text-xs">🚀</span>
-            </button>
             <Link to="/placement" className="bg-blue-600 px-4 py-1 rounded hover:bg-blue-700 transition">
               Our Placements
             </Link>
@@ -77,21 +65,21 @@ export default function Navbar() {
                   <div className="fixed inset-0 z-40" onClick={() => setAboutOpen(false)}></div>
                   <div className="absolute top-full left-0 mt-4 bg-white rounded-xl shadow-2xl py-3 w-56 border border-gray-100 z-50">
                     <Link to="/about/company" onClick={() => setAboutOpen(false)} className="flex items-center gap-3 px-5 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all group">
-                      <span className="text-2xl">🏛️</span>
+                      <i className="fa-solid fa-building text-2xl text-blue-600"></i>
                       <div>
                         <p className="text-gray-900 font-semibold group-hover:text-blue-600">Company</p>
                         <p className="text-xs text-gray-500">About NexaByte</p>
                       </div>
                     </Link>
                     <Link to="/about/team" onClick={() => setAboutOpen(false)} className="flex items-center gap-3 px-5 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all group">
-                      <span className="text-2xl">👥</span>
+                      <i className="fa-solid fa-users text-2xl text-blue-600"></i>
                       <div>
                         <p className="text-gray-900 font-semibold group-hover:text-blue-600">Our Team</p>
                         <p className="text-xs text-gray-500">Meet the experts</p>
                       </div>
                     </Link>
                     <Link to="/about/mission-vision" onClick={() => setAboutOpen(false)} className="flex items-center gap-3 px-5 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all group">
-                      <span className="text-2xl">🎯</span>
+                      <i className="fa-solid fa-bullseye text-2xl text-blue-600"></i>
                       <div>
                         <p className="text-gray-900 font-semibold group-hover:text-blue-600">Mission & Vision</p>
                         <p className="text-xs text-gray-500">Our goals</p>
@@ -115,35 +103,35 @@ export default function Navbar() {
                   <div className="fixed inset-0 z-40" onClick={() => setServicesOpen(false)}></div>
                   <div className="absolute top-full left-0 mt-4 bg-white rounded-xl shadow-2xl py-3 w-64 border border-gray-100 z-50">
                     <Link to="/services" onClick={() => setServicesOpen(false)} className="flex items-center gap-3 px-5 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all group border-b border-gray-100">
-                      <span className="text-2xl">💼</span>
+                      <i className="fa-solid fa-briefcase text-2xl text-blue-600"></i>
                       <div>
                         <p className="text-gray-900 font-bold group-hover:text-blue-600">All Services</p>
                         <p className="text-xs text-gray-500">View complete list</p>
                       </div>
                     </Link>
                     <Link to="/services#software" onClick={() => setServicesOpen(false)} className="flex items-center gap-3 px-5 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all group">
-                      <span className="text-2xl">💻</span>
+                      <i className="fa-solid fa-laptop-code text-2xl text-blue-600"></i>
                       <div>
                         <p className="text-gray-900 font-semibold group-hover:text-blue-600">Custom Software</p>
                         <p className="text-xs text-gray-500">Tailored solutions</p>
                       </div>
                     </Link>
                     <Link to="/services#web" onClick={() => setServicesOpen(false)} className="flex items-center gap-3 px-5 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all group">
-                      <span className="text-2xl">🌐</span>
+                      <i className="fa-solid fa-globe text-2xl text-blue-600"></i>
                       <div>
                         <p className="text-gray-900 font-semibold group-hover:text-blue-600">Web Development</p>
                         <p className="text-xs text-gray-500">Modern websites</p>
                       </div>
                     </Link>
                     <Link to="/services#mobile" onClick={() => setServicesOpen(false)} className="flex items-center gap-3 px-5 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all group">
-                      <span className="text-2xl">📱</span>
+                      <i className="fa-solid fa-mobile-screen-button text-2xl text-blue-600"></i>
                       <div>
                         <p className="text-gray-900 font-semibold group-hover:text-blue-600">Mobile Apps</p>
                         <p className="text-xs text-gray-500">iOS & Android</p>
                       </div>
                     </Link>
                     <Link to="/services#cloud" onClick={() => setServicesOpen(false)} className="flex items-center gap-3 px-5 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-cyan-50 transition-all group">
-                      <span className="text-2xl">☁️</span>
+                      <i className="fa-solid fa-cloud text-2xl text-blue-600"></i>
                       <div>
                         <p className="text-gray-900 font-semibold group-hover:text-blue-600">Cloud & DevOps</p>
                         <p className="text-xs text-gray-500">Scalable infrastructure</p>
@@ -155,6 +143,7 @@ export default function Navbar() {
             </li>
             <li><Link to="/programs" className="hover:text-cyan-400 transition">Programs</Link></li>
             <li><Link to="/placement" className="hover:text-cyan-400 transition">Placement</Link></li>
+            <li><Link to="/portfolio" className="hover:text-cyan-400 transition">Portfolio</Link></li>
             <li><Link to="/contact" className="hover:text-cyan-400 transition">Contact</Link></li>
           </ul>
 
@@ -193,6 +182,7 @@ export default function Navbar() {
               <li><Link to="/services" onClick={() => setMobileMenuOpen(false)} className="block px-6 py-4 hover:bg-blue-900 transition">Services</Link></li>
               <li><Link to="/programs" onClick={() => setMobileMenuOpen(false)} className="block px-6 py-4 hover:bg-blue-900 transition">Programs</Link></li>
               <li><Link to="/placement" onClick={() => setMobileMenuOpen(false)} className="block px-6 py-4 hover:bg-blue-900 transition">Placement</Link></li>
+              <li><Link to="/portfolio" onClick={() => setMobileMenuOpen(false)} className="block px-6 py-4 hover:bg-blue-900 transition">Portfolio</Link></li>
               <li><Link to="/contact" onClick={() => setMobileMenuOpen(false)} className="block px-6 py-4 hover:bg-blue-900 transition">Contact</Link></li>
               <li><Link to="/verify" onClick={() => setMobileMenuOpen(false)} className="block px-6 py-4 bg-blue-600 hover:bg-blue-700 transition">Verify Certificate</Link></li>
               <li><Link to="/contact" onClick={() => setMobileMenuOpen(false)} className="block px-6 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 transition">Register Now</Link></li>

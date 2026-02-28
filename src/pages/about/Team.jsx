@@ -25,7 +25,7 @@ export default function Team() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 rounded-2xl text-center hover:shadow-xl transition-all">
               <div className="w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <span className="text-3xl sm:text-4xl">👨💼</span>
+                <i className="fa-solid fa-user-tie text-white text-3xl sm:text-4xl"></i>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-gray-900">Leadership Team</h3>
               <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">Visionary leaders with 15+ years of industry expertise</p>
@@ -37,7 +37,7 @@ export default function Team() {
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 rounded-2xl text-center hover:shadow-xl transition-all">
               <div className="w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <span className="text-3xl sm:text-4xl">👨💻</span>
+                <i className="fa-solid fa-laptop-code text-white text-3xl sm:text-4xl"></i>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-gray-900">Development Team</h3>
               <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">50+ skilled developers mastering cutting-edge technologies</p>
@@ -49,7 +49,7 @@ export default function Team() {
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 rounded-2xl text-center hover:shadow-xl transition-all">
               <div className="w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                <span className="text-3xl sm:text-4xl">👨🏫</span>
+                <i className="fa-solid fa-chalkboard-user text-white text-3xl sm:text-4xl"></i>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-gray-900">Training Team</h3>
               <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">Industry-certified trainers shaping future tech leaders</p>
@@ -116,17 +116,17 @@ export default function Team() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 rounded-xl border-2 border-blue-200">
-              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🤝</div>
+              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4"><i className="fa-solid fa-handshake"></i></div>
               <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-gray-900">Collaboration</h3>
               <p className="text-sm sm:text-base text-gray-600">We work together as one team to achieve common goals</p>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 rounded-xl border-2 border-blue-200">
-              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">💡</div>
+              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4"><i className="fa-solid fa-lightbulb"></i></div>
               <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-gray-900">Innovation</h3>
               <p className="text-sm sm:text-base text-gray-600">Encouraging creative thinking and new ideas every day</p>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 rounded-xl border-2 border-blue-200">
-              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">📚</div>
+              <div className="text-3xl sm:text-4xl mb-3 sm:mb-4"><i className="fa-solid fa-book"></i></div>
               <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-gray-900">Learning</h3>
               <p className="text-sm sm:text-base text-gray-600">Continuous skill development and knowledge sharing</p>
             </div>
