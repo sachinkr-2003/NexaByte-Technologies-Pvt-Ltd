@@ -27,14 +27,14 @@ export default function Programs() {
 
           <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
             {/* Summer Training */}
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 lg:p-10 rounded-3xl border-2 border-blue-200 hover:shadow-2xl transition-all">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mb-6">
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-5 sm:p-6 lg:p-8 rounded-2xl border-2 border-blue-200 hover:shadow-xl transition-all">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl flex items-center justify-center mb-4">
                 <i className="fa-solid fa-sun text-white text-4xl sm:text-5xl"></i>
               </div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-900">Summer Training</h3>
               <p className="text-gray-600 mb-4 sm:mb-6 text-base sm:text-lg">6-8 weeks intensive program for students during summer break</p>
-              
-              <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
+
+              <div className="space-y-2 sm:space-y-3 mb-5 sm:mb-6">
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 text-xl flex-shrink-0">✓</span>
                   <span className="text-sm sm:text-base text-gray-700">Hands-on practical training</span>
@@ -57,7 +57,7 @@ export default function Programs() {
                 </div>
               </div>
 
-              <div className="bg-white p-4 sm:p-6 rounded-2xl mb-4 sm:mb-6">
+              <div className="bg-white p-4 sm:p-5 rounded-xl mb-4 sm:mb-5">
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-sm sm:text-base text-gray-600 font-semibold">Duration:</span>
                   <span className="text-sm sm:text-base text-gray-900 font-bold">6-8 Weeks</span>
@@ -68,20 +68,20 @@ export default function Programs() {
                 </div>
               </div>
 
-              <a href="/contact" className="block w-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-center py-3 sm:py-4 rounded-xl font-bold text-base sm:text-lg hover:shadow-lg transition-all">
+              <a href="/contact" className="block w-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-center py-3 rounded-xl font-bold text-base sm:text-lg hover:shadow-md transition-all">
                 Enroll Now
               </a>
             </div>
 
             {/* Industrial Training */}
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 lg:p-10 rounded-3xl border-2 border-blue-200 hover:shadow-2xl transition-all">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mb-6">
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-5 sm:p-6 lg:p-8 rounded-2xl border-2 border-blue-200 hover:shadow-xl transition-all">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl flex items-center justify-center mb-4">
                 <i className="fa-solid fa-industry text-white text-4xl sm:text-5xl"></i>
               </div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-900">Industrial Training</h3>
               <p className="text-gray-600 mb-4 sm:mb-6 text-base sm:text-lg">3-6 months comprehensive training with real-world projects</p>
-              
-              <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
+
+              <div className="space-y-2 sm:space-y-3 mb-5 sm:mb-6">
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 text-xl flex-shrink-0">✓</span>
                   <span className="text-sm sm:text-base text-gray-700">In-depth technical training</span>
@@ -104,7 +104,7 @@ export default function Programs() {
                 </div>
               </div>
 
-              <div className="bg-white p-4 sm:p-6 rounded-2xl mb-4 sm:mb-6">
+              <div className="bg-white p-4 sm:p-5 rounded-xl mb-4 sm:mb-5">
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-sm sm:text-base text-gray-600 font-semibold">Duration:</span>
                   <span className="text-sm sm:text-base text-gray-900 font-bold">3-6 Months</span>
@@ -115,20 +115,20 @@ export default function Programs() {
                 </div>
               </div>
 
-              <a href="/contact" className="block w-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-center py-3 sm:py-4 rounded-xl font-bold text-base sm:text-lg hover:shadow-lg transition-all">
+              <a href="/contact" className="block w-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-center py-3 rounded-xl font-bold text-base sm:text-lg hover:shadow-md transition-all">
                 Enroll Now
               </a>
             </div>
 
             {/* Project-Based Internship */}
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 lg:p-10 rounded-3xl border-2 border-blue-200 hover:shadow-2xl transition-all">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mb-6">
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-5 sm:p-6 lg:p-8 rounded-2xl border-2 border-blue-200 hover:shadow-xl transition-all">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl flex items-center justify-center mb-4">
                 <i className="fa-solid fa-briefcase text-white text-4xl sm:text-5xl"></i>
               </div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-900">Project-Based Internship</h3>
               <p className="text-gray-600 mb-4 sm:mb-6 text-base sm:text-lg">2-4 months internship working on live client projects</p>
-              
-              <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
+
+              <div className="space-y-2 sm:space-y-3 mb-5 sm:mb-6">
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 text-xl flex-shrink-0">✓</span>
                   <span className="text-sm sm:text-base text-gray-700">Work on live projects</span>
@@ -151,7 +151,7 @@ export default function Programs() {
                 </div>
               </div>
 
-              <div className="bg-white p-4 sm:p-6 rounded-2xl mb-4 sm:mb-6">
+              <div className="bg-white p-4 sm:p-5 rounded-xl mb-4 sm:mb-5">
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-sm sm:text-base text-gray-600 font-semibold">Duration:</span>
                   <span className="text-sm sm:text-base text-gray-900 font-bold">2-4 Months</span>
@@ -162,20 +162,20 @@ export default function Programs() {
                 </div>
               </div>
 
-              <a href="/contact" className="block w-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-center py-3 sm:py-4 rounded-xl font-bold text-base sm:text-lg hover:shadow-lg transition-all">
+              <a href="/contact" className="block w-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-center py-3 rounded-xl font-bold text-base sm:text-lg hover:shadow-md transition-all">
                 Apply Now
               </a>
             </div>
 
             {/* Apprenticeship Program */}
-            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 sm:p-8 lg:p-10 rounded-3xl border-2 border-blue-200 hover:shadow-2xl transition-all">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mb-6">
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-5 sm:p-6 lg:p-8 rounded-2xl border-2 border-blue-200 hover:shadow-xl transition-all">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl flex items-center justify-center mb-4">
                 <i className="fa-solid fa-graduation-cap text-white text-4xl sm:text-5xl"></i>
               </div>
               <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-900">Apprenticeship Program</h3>
               <p className="text-gray-600 mb-4 sm:mb-6 text-base sm:text-lg">6-12 months earn-while-you-learn program</p>
-              
-              <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
+
+              <div className="space-y-2 sm:space-y-3 mb-5 sm:mb-6">
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 text-xl flex-shrink-0">✓</span>
                   <span className="text-sm sm:text-base text-gray-700">Monthly stipend</span>
@@ -198,7 +198,7 @@ export default function Programs() {
                 </div>
               </div>
 
-              <div className="bg-white p-4 sm:p-6 rounded-2xl mb-4 sm:mb-6">
+              <div className="bg-white p-4 sm:p-5 rounded-xl mb-4 sm:mb-5">
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-sm sm:text-base text-gray-600 font-semibold">Duration:</span>
                   <span className="text-sm sm:text-base text-gray-900 font-bold">6-12 Months</span>
@@ -209,7 +209,7 @@ export default function Programs() {
                 </div>
               </div>
 
-              <a href="/contact" className="block w-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-center py-3 sm:py-4 rounded-xl font-bold text-base sm:text-lg hover:shadow-lg transition-all">
+              <a href="/contact" className="block w-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-center py-3 rounded-xl font-bold text-base sm:text-lg hover:shadow-md transition-all">
                 Apply Now
               </a>
             </div>
